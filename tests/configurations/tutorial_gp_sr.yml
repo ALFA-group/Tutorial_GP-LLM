@@ -1,0 +1,49 @@
+fitness_function:
+        name: "alfa_ec_llm.problem_environments.symbolic_regression.SymbolicRegressionGP"
+
+        # Name of file that has data(inputs and outputs) stored in it.
+        fitness_cases_file: tests/data/fitness_cases.csv
+
+        # Ratio of fitness cases used for training individual solutions
+        test_train_split: 0.7
+
+        # All inputs and constants are automatically also set to terminals as
+        # they have 0 arity. Variables are read from the fitness case file
+        arities:
+            +: 2
+            '*': 2
+            #/: 2
+            -: 2
+
+        # Specify the constants you would like to employ in your evaluation
+        # the program will use 0 to the number you specified
+        constants:
+            values: 0, 1
+
+# Specify the number of individuals(population) make sure the
+# population size is GREATER than the number of inputs
+population_size: 2
+
+# Specify the max depth of the tree
+max_depth: 5
+
+# Specify the number of best individuals that are preserved between generations
+elite_size: 1
+
+# Specify the number of generations you would like to generate
+generations: 2
+
+# Specify the number of individual solutions that are compared when
+# determining which solutions are inserted into next generation of the
+# search loop
+tournament_size: 2
+
+# Random seed. Enables a user to replicate experiment
+seed: 1
+
+# Probability of individual solutions to be varied by the crossover operator
+crossover_probability: 0.8
+
+# Probability of individual solutions to be varied by the mutation operator
+mutation_probability: 0.2
+

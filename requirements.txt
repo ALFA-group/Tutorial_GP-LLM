@@ -1,0 +1,16 @@
+networkx>=2.2
+numpy>=1.15.3
+matplotlib>=3.0.1
+recommonmark>=0.4.0
+typing>=3.6.6
+pytest
+wheel
+pyyaml
+black
+flake8
+mypy
+openai
+sympy
+pandas
+seaborn
+python-dotenv
