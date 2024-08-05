@@ -1,6 +1,6 @@
 # Tutorial-LLM_GP
 
-Simple implementation of Evolutionary Computation with LLMs. It is an extension of [https://github.com/flexgp/pony_gp](https://github.com/flexgp/pony_gp) with addition of LLM based operators. Uses `python3`. 
+Simple implementation of Evolutionary Computation with LLMs. It is an extension of [https://github.com/flexgp/pony_gp](https://github.com/flexgp/pony_gp) with addition of LLM based operators. The LLM based operators are based on [https://arxiv.org/abs/2401.07102](https://arxiv.org/abs/2401.07102). It uses `python3`. 
 
 ## Install
 
